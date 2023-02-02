@@ -81,7 +81,7 @@ require'executor'.setup{
 ### Haskell and Rust in the same window:
 <img src="https://github.com/javi-7/img/blob/master/nvim-executor/executor-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
-**NOTE:** The colorscheme **blackcat** from [nvim-poe](https://github.com/javi-7/nvim-poe) is used in this image.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javi-7/nvim-nyctovim) is used in this image.
 
 ## Support
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)
