@@ -1,10 +1,10 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
-local utils = require'executor.utils'
-local Logger = utils.Logger
+local util = require'executor.util'
+local Logger = require'executor.logger':new("Executor")
 local setup = require'executor'.DEFAULTS
 local M = {}
 
@@ -36,7 +36,7 @@ end
 
 function M.run()
     local ft = vim.bo.filetype
-    local compiler = utils.compilers[ft]
+    local compiler = util.compilers[ft]
     local lang = vim.b.executor_language
 
     if not compiler then
@@ -45,7 +45,7 @@ function M.run()
     end
 
     if vim.fn.executable(compiler) ~= 0 then
-        local identifier = lang .. utils.buffer_identifier
+        local identifier = lang .. util.buffer_identifier
         if vim.fn.bufwinnr(identifier) >= 0 then
             vim.cmd("bd! " .. identifier)
         end
@@ -60,8 +60,8 @@ function M.run()
 end
 
 function M.close()
-    for k, _ in pairs(utils.compilers) do
-        local local_buf = k .. utils.buffer_identifier
+    for k, _ in pairs(util.compilers) do
+        local local_buf = k .. util.buffer_identifier
         pcall(function()
             vim.cmd("bd! " .. local_buf)
         end)

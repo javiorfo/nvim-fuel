@@ -1,9 +1,9 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
-local utils = require'executor.utils'
+local util = require'executor.util'
 
 return {
     build = function (file_with_extension, file)
@@ -11,6 +11,6 @@ return {
         return string.format(" gcc %s -o %s; %s; rm -f %s", file_with_extension, file, file, file)
     end,
     get_statusline = function(file)
-        return utils.statusline_style(" C", file)
+        return util.statusline_style(" C", file)
     end
 }

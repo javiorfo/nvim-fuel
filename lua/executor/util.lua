@@ -1,14 +1,11 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
 local M = {}
 
 M.buffer_identifier = "_executor_main_console"
-
-local logger = require'osfa.logger':new("Executor")
-M.logger = logger
 
 M.compilers = {
     java = "javac",

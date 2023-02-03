@@ -1,9 +1,9 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
-local utils = require'executor.utils'
+local util = require'executor.util'
 
 return {
     build = function (file_with_extension, file)
@@ -13,7 +13,7 @@ return {
         return string.format(" javac %s;java -cp %s %s;rm -f %s", file_with_extension, classpath, file, dot_classes)
     end,
     get_statusline = function(file)
-        return utils.statusline_style(" Java", file)
+        return util.statusline_style(" Java", file)
     end
 }
 

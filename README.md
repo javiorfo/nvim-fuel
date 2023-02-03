@@ -35,15 +35,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'javi-7/nvim-executor'
-Plug 'javi-7/nvim-osfa'
+Plug 'javio7/nvim-executor'
 ```
 `Packer`
 ```lua
-use {
-    'javi-7/nvim-executor'
-    requires = {{ 'javi-7/nvim-osfa' }}
-  }
+use 'javio7/nvim-executor'
 ```
 
 ### Configuration
@@ -73,15 +69,15 @@ require'executor'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/javi-7/img/blob/master/nvim-executor/executor-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/javi-7/img/blob/master/nvim-executor/executor-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/javi-7/img/blob/master/nvim-executor/executor-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javi-7/nvim-nyctovim) is used in this image.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javio7/nvim-nyctovim) is used in this image.
 
 ## Support
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)

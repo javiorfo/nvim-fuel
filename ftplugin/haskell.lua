@@ -1,6 +1,6 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
 vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.hs,*.lhs lua vim.b.executor_language = "haskell"]]

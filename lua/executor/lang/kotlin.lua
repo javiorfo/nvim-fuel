@@ -1,9 +1,9 @@
 -- ########################################################
 -- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javi-7/nvim-executor #
+-- # URL:         https://github.com/javio7/nvim-executor #
 -- ########################################################
 
-local utils = require'executor.utils'
+local util = require'executor.util'
 
 return {
     build = function (file_with_extension, file)
@@ -15,6 +15,6 @@ return {
             file_with_extension, classpath, classpath, file, dot_classes, meta)
     end,
     get_statusline = function(file)
-        return utils.statusline_style(" Kotlin", file)
+        return util.statusline_style(" Kotlin", file)
     end
 }
