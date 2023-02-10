@@ -50,7 +50,7 @@ function M.run()
             vim.cmd("bd! " .. identifier)
         end
         if setup.autosave then
-            vim.cmd("w")
+            vim.cmd("silent w")
         end
         open_console(lang, identifier)
     else
