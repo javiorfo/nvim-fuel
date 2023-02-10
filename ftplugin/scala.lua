@@ -1,6 +1,6 @@
--- #####################################################
--- # Maintainer:  Javier Orfo                          #
--- # URL:         https://github.com/javio7/nvim-flame #
--- #####################################################
+-- ####################################################
+-- # Maintainer:  Javier Orfo                         #
+-- # URL:         https://github.com/javio7/nvim-fuel #
+-- ####################################################
 
-vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.scala,*.sc lua vim.b.flame_language = "scala"]]
+vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.scala,*.sc lua vim.b.fuel_language = "scala"]]

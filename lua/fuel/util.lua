@@ -1,11 +1,11 @@
--- #####################################################
--- # Maintainer:  Javier Orfo                          #
--- # URL:         https://github.com/javio7/nvim-flame #
--- #####################################################
+-- ####################################################
+-- # Maintainer:  Javier Orfo                         #
+-- # URL:         https://github.com/javio7/nvim-fuel #
+-- ####################################################
 
 local M = {}
 
-M.buffer_identifier = "_flame_main_console"
+M.buffer_identifier = "_fuel_main_console"
 
 M.compilers = {
     java = "javac",

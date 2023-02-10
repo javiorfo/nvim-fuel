@@ -1,9 +1,9 @@
--- #####################################################
--- # Maintainer:  Javier Orfo                          #
--- # URL:         https://github.com/javio7/nvim-flame #
--- #####################################################
+-- ####################################################
+-- # Maintainer:  Javier Orfo                         #
+-- # URL:         https://github.com/javio7/nvim-fuel #
+-- ####################################################
 
-local util = require'flame.util'
+local util = require'fuel.util'
 
 return {
     build = function (file_with_extension, file)

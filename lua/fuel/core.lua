@@ -1,16 +1,16 @@
--- #####################################################
--- # Maintainer:  Javier Orfo                          #
--- # URL:         https://github.com/javio7/nvim-flame #
--- #####################################################
+-- ####################################################
+-- # Maintainer:  Javier Orfo                         #
+-- # URL:         https://github.com/javio7/nvim-fuel #
+-- ####################################################
 
-local util = require'flame.util'
-local Logger = require'flame.logger':new("Flame")
-local setup = require'flame'.DEFAULTS
+local util = require'fuel.util'
+local Logger = require'fuel.logger':new("Fuel")
+local setup = require'fuel'.DEFAULTS
 local M = {}
 
 local function get_console_params(file, file_with_extension)
     local console = string.format("sp | resize %s | terminal ", setup.console_size)
-    console = console .. require("flame.lang." .. vim.b.flame_language).build(file_with_extension, file)
+    console = console .. require("fuel.lang." .. vim.b.fuel_language).build(file_with_extension, file)
     return console
 end
 
@@ -21,7 +21,7 @@ local function create_statusline(file, language)
     end
 
     vim.opt_local.laststatus = 2
-    vim.opt_local.statusline = require("flame.lang." .. language).get_statusline(file)
+    vim.opt_local.statusline = require("fuel.lang." .. language).get_statusline(file)
 end
 
 local function open_console(language, identifier)
@@ -37,7 +37,7 @@ end
 function M.run()
     local ft = vim.bo.filetype
     local compiler = util.compilers[ft]
-    local lang = vim.b.flame_language
+    local lang = vim.b.fuel_language
 
     if not compiler then
        Logger:warn(string.format("The programming language %s is not supported.", ft))

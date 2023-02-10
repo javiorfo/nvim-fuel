@@ -1,5 +1,6 @@
-# nvim-flame
-*nvim-flame is a Neovim plugin for running a main or script in several languages. This is meant to be useful for practicing and maybe teaching.*
+# nvim-fuel
+### Fuel for your programs.
+*nvim-fuel is a Neovim plugin for running a main or script in several languages. This is meant to be useful for practicing and maybe teaching.*
 
 ## Caveats
 - To use this plugin in a particular language, **the compiler or language itself needs to be installed**.
@@ -7,8 +8,8 @@
 
 ## Overview
 - [x] Characteristics
-    - [x] Command to show results in Flame console
-    - [x] Command to close Flame console
+    - [x] Command to show results in Fuel console
+    - [x] Command to close Fuel console
     - [x] Execution Neovim modes
         - [x] Normal mode
         - [ ] Insert mode
@@ -35,11 +36,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'javio7/nvim-flame'
+Plug 'javio7/nvim-fuel'
 ```
 `Packer`
 ```lua
-use 'javio7/nvim-flame'
+use 'javio7/nvim-fuel'
 ```
 
 ### Configuration
@@ -48,24 +49,24 @@ use 'javio7/nvim-flame'
 local opts = { noremap = true, silent = true }
 
 -- Normal mode 
-vim.api.nvim_set_keymap('n', '<leader>er', '<Plug>Flame', opts)
-vim.api.nvim_set_keymap('n', '<leader>ec', '<Plug>FlameOut<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>er', '<Plug>Fuel', opts)
+vim.api.nvim_set_keymap('n', '<leader>ec', '<Plug>FuelStop<CR>', opts)
 ```
 
 - Only the installation step is required to use this plugin, but you can modify this options if you like:
 ```lua
-require'flame'.setup{
+require'fuel'.setup{
     -- Default console size
     console_size = 10,
 
-    -- Default autosave before pressing the flame shortcut
+    -- Default autosave before pressing the Fuel shortcut
     autosave = true
 }
 ```
 
 # Usage
-- Executing the map corresponding to `Flame` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
-- Execute the map corresponding to `FlameOut` to close all open Flame console. 
+- Executing the map corresponding to `Fuel` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
+- Execute the map corresponding to `FuelStop` to close all open Fuel console. 
 
 ## Screenshots
 ### Java:
