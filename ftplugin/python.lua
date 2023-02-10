@@ -1,6 +1,6 @@
--- ########################################################
--- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javio7/nvim-executor #
--- ########################################################
+-- #####################################################
+-- # Maintainer:  Javier Orfo                          #
+-- # URL:         https://github.com/javio7/nvim-flame #
+-- #####################################################
 
-vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.py lua vim.b.executor_language = "python"]]
+vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.py lua vim.b.flame_language = "python"]]

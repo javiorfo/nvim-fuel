@@ -1,11 +1,11 @@
--- ########################################################
--- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javio7/nvim-executor #
--- ########################################################
+-- #####################################################
+-- # Maintainer:  Javier Orfo                          #
+-- # URL:         https://github.com/javio7/nvim-flame #
+-- #####################################################
 
 local M = {}
 
-M.buffer_identifier = "_executor_main_console"
+M.buffer_identifier = "_flame_main_console"
 
 M.compilers = {
     java = "javac",

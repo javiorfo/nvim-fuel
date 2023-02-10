@@ -1,5 +1,5 @@
-# nvim-executor
-*nvim-executor is a Neovim plugin for running a main or script in several languages. This is meant to be useful for practicing and maybe teaching.*
+# nvim-flame
+*nvim-flame is a Neovim plugin for running a main or script in several languages. This is meant to be useful for practicing and maybe teaching.*
 
 ## Caveats
 - To use this plugin in a particular language, **the compiler or language itself needs to be installed**.
@@ -7,8 +7,8 @@
 
 ## Overview
 - [x] Characteristics
-    - [x] Command to show results in Executor console
-    - [x] Command to close Executor console
+    - [x] Command to show results in Flame console
+    - [x] Command to close Flame console
     - [x] Execution Neovim modes
         - [x] Normal mode
         - [ ] Insert mode
@@ -35,11 +35,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'javio7/nvim-executor'
+Plug 'javio7/nvim-flame'
 ```
 `Packer`
 ```lua
-use 'javio7/nvim-executor'
+use 'javio7/nvim-flame'
 ```
 
 ### Configuration
@@ -48,34 +48,34 @@ use 'javio7/nvim-executor'
 local opts = { noremap = true, silent = true }
 
 -- Normal mode 
-vim.api.nvim_set_keymap('n', '<leader>er', '<Plug>ExecutorRun', opts)
-vim.api.nvim_set_keymap('n', '<leader>ec', '<Plug>ExecutorClose<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>er', '<Plug>Flame', opts)
+vim.api.nvim_set_keymap('n', '<leader>ec', '<Plug>FlameOut<CR>', opts)
 ```
 
 - Only the installation step is required to use this plugin, but you can modify this options if you like:
 ```lua
-require'executor'.setup{
+require'flame'.setup{
     -- Default console size
     console_size = 10,
 
-    -- Default autosave before pressing the executor shortcut
+    -- Default autosave before pressing the flame shortcut
     autosave = true
 }
 ```
 
 # Usage
-- Executing the map corresponding to `ExecutorRun` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
-- Execute the map corresponding to `ExecutorClose` to close all open Executor console. 
+- Executing the map corresponding to `Flame` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
+- Execute the map corresponding to `FlameOut` to close all open Flame console. 
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-flames/flames-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-flames/flames-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/javio7/img/blob/master/nvim-executor/executor-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/javio7/img/blob/master/nvim-flames/flames-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javio7/nvim-nyctovim) is used in this image.
 

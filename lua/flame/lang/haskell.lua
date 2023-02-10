@@ -1,9 +1,9 @@
--- ########################################################
--- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javio7/nvim-executor #
--- ########################################################
+-- #####################################################
+-- # Maintainer:  Javier Orfo                          #
+-- # URL:         https://github.com/javio7/nvim-flame #
+-- #####################################################
 
-local util = require'executor.util'
+local util = require'flame.util'
 
 return {
     build = function (file_with_extension, file)

@@ -1,6 +1,6 @@
--- ########################################################
--- # Maintainer:  Javier Orfo                             #
--- # URL:         https://github.com/javio7/nvim-executor #
--- ########################################################
+-- #####################################################
+-- # Maintainer:  Javier Orfo                          #
+-- # URL:         https://github.com/javio7/nvim-flame #
+-- #####################################################
 
-vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.rs lua vim.b.executor_language = "rust"]]
+vim.cmd[[autocmd BufEnter,BufNewFile,BufRead *.rs lua vim.b.flame_language = "rust"]]
