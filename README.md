@@ -7,31 +7,32 @@
 - This plugin has been developed on and for Linux following open source philosophies.
 
 ## Overview
-- [x] Characteristics
-    - [x] Command to show results in Fuel console
-    - [x] Command to close Fuel console
-    - [x] Execution Neovim modes
-        - [x] Normal mode
-        - [ ] Insert mode
-    - [x] Console size configurable
-    - [x] Autosave configurable
-    - [x] Supports different languages in same window (different buffers) 
-    - [ ] Main args
-    - [x] IO
-        - [x] Std Output
-        - [x] Std Input
-- [x] Compiled and scripting languages (compilers or languages are required to be installed)
-    - [x] C
-    - [x] C++
-    - [x] Go
-    - [x] Haskell
-    - [x] Java
-    - [ ] Javascript/Typescript/Node
-    - [x] Kotlin
-    - [x] Lua
-    - [x] Python
-    - [x] Rust
-    - [x] Scala
+| Feature | nvim-fuel | NOTE |
+| ------- | ------------- | ---- |
+| Command to show results in Fuel Console | :heavy_check_mark: | Set by `Fuel` |
+| Command to close Fuel Console | :heavy_check_mark: | Set by `FuelStop` |
+| Execution in Normal Mode | :heavy_check_mark: | Set by `Fuel` |
+| Execution in Insert Mode | :heavy_check_mark: | Set by `Fuel` |
+| Console size configurable | :heavy_check_mark: | By `setup` function |
+| Autosave configurable | :heavy_check_mark: | By `setup` function |
+| Supports different languages in same window (different buffers)  | :heavy_check_mark: |  |
+| Main arguments | :x: | |
+| Stdin | :heavy_check_mark: | |
+
+| Language | nvim-fuel |
+| ------- | ------------- |
+| C | :heavy_check_mark: |
+| C++ | :heavy_check_mark: |
+| Go | :heavy_check_mark: |
+| Haskell | :heavy_check_mark: |
+| Java | :heavy_check_mark: |
+| Javascript | :x: |
+| Kotlin | :heavy_check_mark: |
+| Lua | :heavy_check_mark: |
+| Python | :heavy_check_mark: |
+| Rust | :heavy_check_mark: |
+| Scala | :heavy_check_mark: |
+| Typescript | :x: |
 
 ## Installation
 `Vim Plug`
