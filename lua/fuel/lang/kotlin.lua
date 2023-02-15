@@ -11,7 +11,8 @@ return {
         local dot_classes = classpath .. "/*.class"
         local meta = classpath .. "/META-INF"
 
-        return string.format(" kotlinc %s -d %s;kotlin -cp %s %sKt; rm -f %s; rm -drf %s",
+        vim.cmd(string.format("autocmd BufDelete kotlin_fuel_main_console silent !rm -f %s && rm -drf %s", dot_classes, meta))
+        return string.format(" kotlinc %s -d %s && kotlin -cp %s %sKt && rm -f %s && rm -drf %s 2> /dev/null",
             file_with_extension, classpath, classpath, file, dot_classes, meta)
     end,
     get_statusline = function(file)
