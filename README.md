@@ -80,6 +80,3 @@ require'fuel'.setup{
 <img src="https://github.com/charkuils/img/blob/master/nvim-flames/flames-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in this image.
-
-## Support
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)
