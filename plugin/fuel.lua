@@ -1,7 +1,7 @@
--- ######################################################
--- # Maintainer: Mr. Charkuils                          #
--- # URL:        https://github.com/charkuils/nvim-fuel #
--- ######################################################
+-- #####################################################
+-- # Maintainer: Javier Orfo                           #
+-- # URL:        https://github.com/javiorfo/nvim-fuel #
+-- #####################################################
 
 if vim.g.fuel then
   return
