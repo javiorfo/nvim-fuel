@@ -1,7 +1,7 @@
--- #####################################################
--- # Maintainer: Javier Orfo                           #
--- # URL:        https://github.com/javiorfo/nvim-fuel #
--- #####################################################
+-- #######################################################
+-- # Maintainer: System Malt                             #
+-- # URL:        https://github.com/systemmalt/nvim-fuel #
+-- #######################################################
 
 if vim.g.fuel then
   return
