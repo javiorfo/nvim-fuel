@@ -1,5 +1,5 @@
 # nvim-fuel
-### :fire: Fuel for your programs
+### Fuel for your programs
 *nvim-fuel is a Neovim plugin for running a main or script in several languages. This is meant to be useful for practicing and maybe teaching.*
 
 ## Caveats
