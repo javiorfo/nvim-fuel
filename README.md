@@ -37,11 +37,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'systemmalt/nvim-fuel'
+Plug 'javiorfo/nvim-fuel'
 ```
 `Packer`
 ```lua
-use 'systemmalt/nvim-fuel'
+use 'javiorfo/nvim-fuel'
 ```
 
 ### Configuration
@@ -71,12 +71,12 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/systemmalt/img/blob/master/nvim-flames/flames-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-flames/flames-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/systemmalt/img/blob/master/nvim-flames/flames-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-flames/flames-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/systemmalt/img/blob/master/nvim-flames/flames-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-flames/flames-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javisystemmaltorfo/nvim-nyctovim) is used in this image.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javiorfo/nvim-nyctovim) is used in this image.
