@@ -1,7 +1,8 @@
--- #######################################################
--- # Maintainer: System Malt                             #
--- # URL:        https://github.com/systemmalt/nvim-fuel #
--- #######################################################
+-- #####################################################
+-- # Maintainer: Javier Orfo                           #
+-- # URL:        https://github.com/javiorfo/nvim-fuel #
+-- #####################################################
+
 local util = require'fuel.util'
 
 return {
