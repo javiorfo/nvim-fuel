@@ -79,4 +79,4 @@ require'fuel'.setup{
 ### Haskell and Rust in the same window:
 <img src="https://github.com/javiorfo/img/blob/master/nvim-flames/flames-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javiorfo/nvim-nyctovim) is used in this image.
+**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/javiorfo/nvim-whisky) is used in this image.
