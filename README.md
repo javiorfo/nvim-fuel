@@ -37,11 +37,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'javiorfo/nvim-fuel'
+Plug 'whiskoder/nvim-fuel'
 ```
 `Packer`
 ```lua
-use 'javiorfo/nvim-fuel'
+use 'whiskoder/nvim-fuel'
 ```
 
 ### Configuration
@@ -71,12 +71,12 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/whiskoder/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/whiskoder/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/whiskoder/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
-**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/javiorfo/nvim-whisky) is used in this image.
+**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/whiskoder/nvim-whisky) is used in this image.
