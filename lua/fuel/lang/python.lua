@@ -1,7 +1,7 @@
--- #####################################################
--- # Maintainer: Javier Orfo                           #
--- # URL:        https://github.com/javiorfo/nvim-fuel #
--- #####################################################
+-- ######################################################
+-- # Maintainer: Javier Orfo                            #
+-- # URL:        https://github.com/whiskoder/nvim-fuel #
+-- ######################################################
 
 local util = require'fuel.util'
 
