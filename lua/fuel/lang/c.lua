@@ -1,10 +1,4 @@
--- ######################################################
--- # Maintainer: Mr. Charkuils                          #
--- # URL:        https://github.com/charkuils/nvim-fuel #
--- ######################################################
-
 local util = require'fuel.util'
-
 
 return {
     build = function (file_with_extension, file)
