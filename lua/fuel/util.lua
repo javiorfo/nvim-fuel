@@ -1,8 +1,3 @@
--- ######################################################
--- # Maintainer: Mr. Charkuils                          #
--- # URL:        https://github.com/charkuils/nvim-fuel #
--- ######################################################
-
 local M = {}
 
 M.buffer_identifier = "_fuel_main_console"
