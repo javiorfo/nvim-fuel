@@ -1,8 +1,3 @@
--- ######################################################
--- # Maintainer: Mr. Charkuils                          #
--- # URL:        https://github.com/charkuils/nvim-fuel #
--- ######################################################
-
 local util = require'fuel.util'
 local Logger = require'fuel.logger':new("Fuel")
 local setup = require'fuel'.DEFAULTS
