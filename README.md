@@ -35,13 +35,13 @@
 | Typescript | :x: |
 
 ## Installation
-`Vim Plug`
-```vim
-Plug 'charkuils/nvim-fuel'
-```
 `Packer`
 ```lua
 use 'charkuils/nvim-fuel'
+```
+`Lazy`
+```lua
+{ 'charkuils/nvim-fuel', lazy = true }
 ```
 
 ### Configuration
