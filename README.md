@@ -80,3 +80,7 @@ require'fuel'.setup{
 <img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
 **NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/charkuils/nvim-whisky) is used in this image.
+
+## Support Charkuils' Work
+
+<img src="https://github.com/charkuils/img/blob/master/binance/BinancePayQR.png?raw=true" alt="binance" style="width:300px;"/>
