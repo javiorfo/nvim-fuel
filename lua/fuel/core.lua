@@ -2,6 +2,7 @@ local util = require'fuel.util'
 local Logger = require'fuel.logger':new("Fuel")
 local setup = require'fuel'.DEFAULTS
 local popcorn = require'popcorn'
+local borders = require'popcorn.borders'
 local M = {}
 
 local function get_console_params(file, file_with_extension)
@@ -36,10 +37,11 @@ local function open_console_popup(language)
     local console = "start | term " .. require("fuel.lang." .. vim.b.fuel_language).build(file_with_extension, file)
 
     local popup_opts = {
-        width = 60,
+        width = 59,
         height = 15,
+        border = borders.rounded_corners_border,
         title = { "FUEL", "WarningMsg" },
-        footer = { require("fuel.lang." .. language).get_footer(file) },
+        footer = { require("fuel.lang." .. language).get_footer(file), "String" },
         content = function()
             vim.cmd(console)
         end
