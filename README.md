@@ -32,12 +32,21 @@ use {
 `Lazy`
 ```lua
 {
-    'javiorfo/nvim-fuel', lazy = true,
-    dependencies = { 'javiorfo/nvim-popcorn' }
+    'javiorfo/nvim-fuel',
+    lazy = true,
+    dependencies = { 'javiorfo/nvim-popcorn' },
+    ft = { "c", "cpp", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala" },
+    config = function()
+         -- Not necessary. Only if you want to change the setup
+    end,
+    keys = {
+        { "<leader>ji", "<Plug>Fuel" },
+        { "<leader>jc", "<Plug>FuelStop" }
+    }
 }
 ```
 
-### Configuration
+### Configuration (Packer)
 - Set mappings in *init.vim* or *init.lua*
 ```lua
 local opts = { noremap = true, silent = true }
