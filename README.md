@@ -89,6 +89,10 @@ require'fuel'.setup{
 ### Haskell and Rust in the same window:
 <img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
+### Kotlin:
+#### With popup console
+<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
+
 **NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/charkuils/nvim-whisky) is used in this image.
 
 ## Support Charkuils' Work
