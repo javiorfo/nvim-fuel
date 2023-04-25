@@ -15,15 +15,19 @@ vim.cmd [[
 
 M.DEFAULTS = {
     console_size = 10,
-    autosave = true
+    autosave = true,
+    popup = false
 }
 
 function M.setup(opts)
    if opts.console_size then
        M.DEFAULTS.console_size = opts.console_size
    end
-    if opts.autosave then
+   if opts.autosave ~= nil then
        M.DEFAULTS.autosave = opts.autosave
+   end
+   if opts.popup ~= nil then
+       M.DEFAULTS.popup = opts.popup
    end
 end
 

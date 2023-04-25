@@ -12,5 +12,8 @@ return {
     end,
     get_statusline = function(file)
         return util.statusline_style(" Kotlin", file)
+    end,
+    get_footer = function(file)
+        return util.footer(" Kotlin", file)
     end
 }

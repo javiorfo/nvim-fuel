@@ -6,5 +6,9 @@ return {
     end,
     get_statusline = function(file)
         return util.statusline_style(" Go", file)
+    end,
+    get_footer = function(file)
+        return util.footer(" Go", file)
     end
+
 }

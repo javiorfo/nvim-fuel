@@ -1,6 +1,7 @@
 local util = require'fuel.util'
 local Logger = require'fuel.logger':new("Fuel")
 local setup = require'fuel'.DEFAULTS
+local popcorn = require'popcorn'
 local M = {}
 
 local function get_console_params(file, file_with_extension)
@@ -29,6 +30,24 @@ local function open_console(language, identifier)
     vim.cmd(vim.fn.bufwinnr(file_with_extension) .. " wincmd w")
 end
 
+local function open_console_popup(language)
+    local file_with_extension = vim.fn.expand("%:p")
+    local file = vim.fn.expand("%:t:r")
+    local console = "start | term " .. require("fuel.lang." .. vim.b.fuel_language).build(file_with_extension, file)
+
+    local popup_opts = {
+        width = 60,
+        height = 15,
+        title = { "NVIM-FUEL", "WarningMsg" },
+        footer = { require("fuel.lang." .. language).get_footer(file) },
+        content = function()
+            vim.cmd(console)
+        end
+    }
+
+    popcorn:new(popup_opts):pop()
+end
+
 function M.run()
     local ft = vim.bo.filetype
     local compiler = util.compilers[ft]
@@ -44,10 +63,16 @@ function M.run()
         if vim.fn.bufwinnr(identifier) >= 0 then
             vim.cmd("bd! " .. identifier)
         end
+
         if setup.autosave then
             vim.cmd("silent w")
         end
-        open_console(lang, identifier)
+
+        if setup.popup then
+            open_console_popup(lang)
+        else
+            open_console(lang, identifier)
+        end
     else
         local message = string.format("To run %s, %s needs to be installed.", lang, compiler)
         Logger:warn(message)

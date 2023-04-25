@@ -8,5 +8,8 @@ return {
     end,
     get_statusline = function(file)
         return util.statusline_style(" C", file)
+    end,
+    get_footer = function(file)
+        return util.footer(" C", file)
     end
 }

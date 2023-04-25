@@ -10,5 +10,9 @@ return {
     end,
     get_statusline = function(file)
         return util.statusline_style(" Rust", file)
+    end,
+    get_footer = function(file)
+        return util.footer(" Rust", file)
     end
+
 }

@@ -13,11 +13,12 @@
 | Command to close Fuel Console | :heavy_check_mark: | Set by `FuelStop` |
 | Execution in Normal Mode | :heavy_check_mark: | Set by `Fuel` |
 | Execution in Insert Mode | :heavy_check_mark: | Set by `Fuel` |
-| Console size configurable | :heavy_check_mark: | By `setup` function |
-| Autosave configurable | :heavy_check_mark: | By `setup` function |
+| Console size configurable | :heavy_check_mark: | By `setup` |
+| Autosave configurable | :heavy_check_mark: | By `setup` |
 | Supports different languages in same window (different buffers)  | :heavy_check_mark: |  |
 | Main arguments | :x: | |
 | Stdin | :heavy_check_mark: | |
+| Popup console | :heavy_check_mark: | By `setup` |
 
 | Language | nvim-fuel |
 | ------- | ------------- |
@@ -37,11 +38,17 @@
 ## Installation
 `Packer`
 ```lua
-use 'charkuils/nvim-fuel'
+use {
+    'charkuils/nvim-fuel',
+    requires = 'charkuils/nvim-popcorn'
+}
 ```
 `Lazy`
 ```lua
-{ 'charkuils/nvim-fuel', lazy = true }
+{
+    'charkuils/nvim-fuel', lazy = true,
+    dependencies = { 'charkuils/nvim-popcorn' }
+}
 ```
 
 ### Configuration
@@ -61,13 +68,16 @@ require'fuel'.setup{
     console_size = 10,
 
     -- Default autosave before pressing the Fuel shortcut
-    autosave = true
+    autosave = true,
+
+    -- Default false. If you want to show the console in a popup instead of a buffer
+    popup = false
 }
 ```
 
 # Usage
 - Executing the map corresponding to `Fuel` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
-- Execute the map corresponding to `FuelStop` to close all open Fuel console. 
+- Execute the map corresponding to `FuelStop` to close all open Fuel console. In case you are using `popup = true` just press <ESC>
 
 ## Screenshots
 ### Java:

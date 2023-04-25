@@ -26,4 +26,8 @@ function M.statusline_style(lang, file)
     return string.format("%%#Normal# %s Console | Running  %s", lang, file)
 end
 
+function M.footer(lang, file)
+    return string.format("%s Console | Running  %s", lang, file)
+end
+
 return M

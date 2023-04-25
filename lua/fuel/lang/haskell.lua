@@ -8,5 +8,9 @@ return {
     end,
     get_statusline = function(file)
         return util.statusline_style(" Haskell", file)
+    end,
+    get_footer = function(file)
+        return util.footer(" Haskell", file)
     end
+
 }
