@@ -39,15 +39,15 @@
 `Packer`
 ```lua
 use {
-    'charkuils/nvim-fuel',
-    requires = 'charkuils/nvim-popcorn'
+    'javiorfo/nvim-fuel',
+    requires = 'javiorfo/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'charkuils/nvim-fuel', lazy = true,
-    dependencies = { 'charkuils/nvim-popcorn' }
+    'javiorfo/nvim-fuel', lazy = true,
+    dependencies = { 'javiorfo/nvim-popcorn' }
 }
 ```
 
@@ -81,20 +81,16 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
 ### Kotlin:
 #### With popup console
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
 
-**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/charkuils/nvim-whisky) is used in this image.
-
-## Support Charkuils' Work
-
-<img src="https://github.com/charkuils/img/blob/master/binance/BinancePayQR.png?raw=true" alt="binance" style="width:300px;"/>
+**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/javiorfo/nvim-whisky) is used in this image.
