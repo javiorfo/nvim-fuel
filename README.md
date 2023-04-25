@@ -4,6 +4,7 @@
 
 ## Caveats
 - To use this plugin in a particular language, **the compiler or language itself needs to be installed**.
+- Supported languages are: **C, C++, Go, Haskell, Java, Kotlin, Lua, Python, Rust and Scala**
 - This plugin has been developed on and for Linux following open source philosophies.
 
 ## Overview
@@ -19,21 +20,6 @@
 | Main arguments | :x: | |
 | Stdin | :heavy_check_mark: | |
 | Popup console | :heavy_check_mark: | By `setup` |
-
-| Language | nvim-fuel |
-| ------- | ------------- |
-| C | :heavy_check_mark: |
-| C++ | :heavy_check_mark: |
-| Go | :heavy_check_mark: |
-| Haskell | :heavy_check_mark: |
-| Java | :heavy_check_mark: |
-| Javascript | :x: |
-| Kotlin | :heavy_check_mark: |
-| Lua | :heavy_check_mark: |
-| Python | :heavy_check_mark: |
-| Rust | :heavy_check_mark: |
-| Scala | :heavy_check_mark: |
-| Typescript | :x: |
 
 ## Installation
 `Packer`
