@@ -40,8 +40,8 @@ use {
          -- Not necessary. Only if you want to change the setup
     end,
     keys = {
-        { "<leader>ji", "<Plug>Fuel" },
-        { "<leader>jc", "<Plug>FuelStop" }
+        { "<leader>fu", "<Plug>Fuel" },
+        { "<leader>fs", "<Plug>FuelStop" }
     }
 }
 ```
@@ -52,8 +52,8 @@ use {
 local opts = { noremap = true, silent = true }
 
 -- Normal mode 
-vim.api.nvim_set_keymap('n', '<leader>er', '<Plug>Fuel', opts)
-vim.api.nvim_set_keymap('n', '<leader>ec', '<Plug>FuelStop<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fu', '<Plug>Fuel', opts)
+vim.api.nvim_set_keymap('n', '<leader>fs', '<Plug>FuelStop<CR>', opts)
 ```
 
 - Only the installation step is required to use this plugin, but you can modify this options if you like:
