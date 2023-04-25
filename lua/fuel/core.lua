@@ -38,7 +38,7 @@ local function open_console_popup(language)
     local popup_opts = {
         width = 60,
         height = 15,
-        title = { "NVIM-FUEL", "WarningMsg" },
+        title = { "FUEL", "WarningMsg" },
         footer = { require("fuel.lang." .. language).get_footer(file) },
         content = function()
             vim.cmd(console)
