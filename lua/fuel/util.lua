@@ -8,6 +8,7 @@ M.compilers = {
     scala = "scala",
     c = "gcc",
     cpp = "g++",
+    clojure = "clojure",
     rust = "rustc",
     haskell = "ghc",
     lua = "lua",
