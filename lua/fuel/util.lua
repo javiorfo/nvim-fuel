@@ -13,7 +13,8 @@ M.compilers = {
     haskell = "ghc",
     lua = "lua",
     python = "python",
-    go = "go"
+    go = "go",
+    zig = "zig"
 }
 
 function M.find_language_by_compiler(compiler)
@@ -24,11 +25,11 @@ function M.find_language_by_compiler(compiler)
 end
 
 function M.statusline_style(lang, file)
-    return string.format("%%#Normal# %s Console | Running  %s", lang, file)
+    return string.format("%%#Normal# %s Console | Running   %s", lang, file)
 end
 
 function M.footer(lang, file)
-    return string.format("%s Console | Running  %s", lang, file)
+    return string.format("%s Console   %s", lang, file)
 end
 
 return M

@@ -40,7 +40,7 @@ local function open_console_popup(language)
         width = 59,
         height = 15,
         border = borders.rounded_corners_border,
-        title = { "FUEL", "Boolean" },
+        title = { "󰈸 FUEL", "Boolean" },
         footer = { require("fuel.lang." .. language).get_footer(file), "String" },
         content = function()
             vim.cmd(console)
