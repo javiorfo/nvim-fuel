@@ -88,4 +88,4 @@ require'fuel'.setup{
 #### With popup console
 <img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
 
-**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/javiorfo/nvim-whisky) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
