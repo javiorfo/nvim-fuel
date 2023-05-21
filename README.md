@@ -4,7 +4,7 @@
 
 ## Caveats
 - To use this plugin in a particular language, **the compiler or language itself needs to be installed**.
-- Supported languages are: **C, C++, Clojure, Go, Haskell, Java, Kotlin, Lua, Python, Rust, Scala and Zig**
+- Supported languages are: **Assembly, C, C++, Clojure, Go, Haskell, Java, Kotlin, Lua, Python, Rust, Scala, Scheme and Zig**
 - This plugin has been developed on and for Linux following open source philosophies.
 
 ## Overview
@@ -35,7 +35,8 @@ use {
     'javiorfo/nvim-fuel',
     lazy = true,
     dependencies = { 'javiorfo/nvim-popcorn' },
-    ft = { "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "zig" },
+    -- ft could contain only the languages nvim-fuel will be used for
+    ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
     config = function()
          -- Not necessary. Only if you want to change the setup
     end,

@@ -3,17 +3,19 @@ local M = {}
 M.buffer_identifier = "_fuel_main_console"
 
 M.compilers = {
+    asm = "as",
+    c = "gcc",
+    clojure = "clojure",
+    cpp = "g++",
+    go = "go",
+    haskell = "ghc",
     java = "javac",
     kotlin = "kotlinc",
-    scala = "scala",
-    c = "gcc",
-    cpp = "g++",
-    clojure = "clojure",
-    rust = "rustc",
-    haskell = "ghc",
     lua = "lua",
     python = "python",
-    go = "go",
+    rust = "rustc",
+    scala = "scala",
+    scheme = "chicken",
     zig = "zig"
 }
 
