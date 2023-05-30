@@ -37,8 +37,8 @@ local function open_console_popup(language)
     local console = "start | term " .. require("fuel.lang." .. vim.b.fuel_language).build(file_with_extension, file)
 
     local popup_opts = {
-        width = 59,
-        height = 15,
+        width = setup.console_size * 4,
+        height = setup.console_size,
         border = borders.rounded_corners_border,
         title = { "󰈸 FUEL", "Boolean" },
         footer = { require("fuel.lang." .. language).get_footer(file), "String" },

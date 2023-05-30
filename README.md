@@ -60,7 +60,7 @@ vim.api.nvim_set_keymap('n', '<leader>fs', '<Plug>FuelStop<CR>', opts)
 - Only the installation step is required to use this plugin, but you can modify this options if you like:
 ```lua
 require'fuel'.setup{
-    -- Default console size
+    -- Default console size (this applies to popup size too)
     console_size = 10,
 
     -- Default autosave before pressing the Fuel shortcut
