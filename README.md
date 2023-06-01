@@ -25,16 +25,16 @@
 `Packer`
 ```lua
 use {
-    'charkuils/nvim-fuel',
-    requires = 'charkuils/nvim-popcorn'
+    'javiorfo/nvim-fuel',
+    requires = 'javiorfo/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'charkuils/nvim-fuel',
+    'javiorfo/nvim-fuel',
     lazy = true,
-    dependencies = { 'charkuils/nvim-popcorn' },
+    dependencies = { 'javiorfo/nvim-popcorn' },
     -- ft could contain only the languages nvim-fuel will be used for
     ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
     config = function()
@@ -77,19 +77,19 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
 
 ### C:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
 
 ### Kotlin:
 #### With popup console
-<img src="https://github.com/charkuils/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
 
-**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/charkuils/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
 
 ## Support
 - Binance: **Pay ID 546639204**
