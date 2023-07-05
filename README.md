@@ -77,21 +77,22 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" style="width:1200;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" />
 
 ### C:
-<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" style="width:1200;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" />
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" style="width:1200;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" />
 
 ### Kotlin:
 #### With popup console
-<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" style="width:1200;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" />
 
 **NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/caosystema/nvim-nyctophilia) is used in this image.
 
 ---
 
-### Donate
+### Support CaoSystema's Work
+- [Binance](https://raw.githubusercontent.com/caosystema/img/master/BinancePayQR.png)
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
