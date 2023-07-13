@@ -25,16 +25,16 @@
 `Packer`
 ```lua
 use {
-    'progrimorio/nvim-fuel',
-    requires = 'progrimorio/nvim-popcorn'
+    'javiorfo/nvim-fuel',
+    requires = 'javiorfo/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'progrimorio/nvim-fuel',
+    'javiorfo/nvim-fuel',
     lazy = true,
-    dependencies = { 'progrimorio/nvim-popcorn' },
+    dependencies = { 'javiorfo/nvim-popcorn' },
     -- ft could contain only the languages nvim-fuel will be used for
     ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
     config = function()
@@ -77,22 +77,22 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/progrimorio/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" />
 
 ### C:
-<img src="https://github.com/progrimorio/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" />
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/progrimorio/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" />
 
 ### Kotlin:
 #### With popup console
-<img src="https://github.com/progrimorio/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" />
 
-**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/progrimorio/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
 
 ---
 
 ### Donate
-- [Binance](https://raw.githubusercontent.com/progrimorio/img/master/binance/progrimorio.png)
+- [Binance](https://raw.githubusercontent.com/javiorfo/img/master/binance/javiorfo.png)
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
