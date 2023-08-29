@@ -75,7 +75,7 @@ function M.run()
             open_console(lang, identifier)
         end
     else
-        local message = string.format("To run %s, %s needs to be installed.", lang, compiler)
+        local message = string.format("To run %s, %s needs to be installed.", ft, compiler)
         Logger:warn(message)
     end
 end
