@@ -37,9 +37,18 @@ use {
     dependencies = { 'javiorfo/nvim-popcorn' },
     -- ft could contain only the languages nvim-fuel will be used for
     ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
-    config = function()
+    opts = {
          -- Not necessary. Only if you want to change the setup
-    end,
+
+         -- Default console size (this applies to popup size too)
+         console_size = 10,
+
+         -- Default autosave before pressing the Fuel shortcut
+         autosave = true,
+
+         -- Default false. If you want to show the console in a popup instead of a buffer
+         popup = false
+    },
     keys = {
         { "<leader>fu", "<Plug>Fuel" },
         { "<leader>fs", "<Plug>FuelStop" }
