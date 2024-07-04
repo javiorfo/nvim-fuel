@@ -25,16 +25,16 @@
 `Packer`
 ```lua
 use {
-    'chaosystema/nvim-fuel',
-    requires = 'chaosystema/nvim-popcorn'
+    'javiorfo/nvim-fuel',
+    requires = 'javiorfo/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'chaosystema/nvim-fuel',
+    'javiorfo/nvim-fuel',
     lazy = true,
-    dependencies = { 'chaosystema/nvim-popcorn' },
+    dependencies = { 'javiorfo/nvim-popcorn' },
     -- ft could contain only the languages nvim-fuel will be used for
     ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
     opts = {
@@ -86,21 +86,22 @@ require'fuel'.setup{
 
 ## Screenshots
 ### Java:
-<img src="https://github.com/chaosystema/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-java.gif?raw=true" alt="java" />
 
 ### C:
-<img src="https://github.com/chaosystema/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-c.gif?raw=true" alt="c" />
 
 ### Haskell and Rust in the same window:
-<img src="https://github.com/chaosystema/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel-haskell-rust.gif?raw=true" alt="haskell" />
 
 ### Kotlin:
 #### With popup console
-<img src="https://github.com/chaosystema/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-fuel/fuel_popup.png?raw=true" alt="popup" />
 
-**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/chaosystema/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
 
 ---
 
 ### Donate
-- **Bitcoin** [(QR)](https://raw.githubusercontent.com/chaosystema/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- **Bitcoin** [(QR)](https://raw.githubusercontent.com/javiorfo/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
