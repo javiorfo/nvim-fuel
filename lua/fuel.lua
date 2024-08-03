@@ -6,7 +6,7 @@ vim.cmd [[
         autocmd BufDelete *_fuel_main_console lua pcall(function() require('lualine').hide({unhide=true}) end)
     augroup end
 
-    augroup console_prevent_bad_closing 
+    augroup console_prevent_bad_closing
 	    autocmd QuitPre *_fuel_main_console :q!
     augroup end
 
@@ -14,21 +14,29 @@ vim.cmd [[
 ]]
 
 M.DEFAULTS = {
-    console_size = 10,
-    autosave = true,
-    popup = false
+    view = {
+        console_size = 10,
+        autosave = true,
+        popup = false
+    }
 }
 
 function M.setup(opts)
-   if opts.console_size then
-       M.DEFAULTS.console_size = opts.console_size
-   end
-   if opts.autosave ~= nil then
-       M.DEFAULTS.autosave = opts.autosave
-   end
-   if opts.popup ~= nil then
-       M.DEFAULTS.popup = opts.popup
-   end
+    if opts.view then
+        local view = opts.view
+        if view.console_size then
+            M.DEFAULTS.view.console_size = view.console_size
+        end
+        if view.autosave ~= nil then
+            M.DEFAULTS.view.autosave = view.autosave
+        end
+        if view.popup ~= nil then
+            M.DEFAULTS.view.popup = view.popup
+        end
+    end
+    if opts.language_implementations then
+       M.DEFAULTS.language_implementations = opts.language_implementations
+    end
 end
 
 return M

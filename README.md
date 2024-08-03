@@ -5,6 +5,7 @@
 ## Caveats
 - To use this plugin in a particular language, **the compiler or language itself needs to be installed**.
 - Supported languages are: **Assembly, C, C++, Clojure, Go, Haskell, Java, Kotlin, Lua, Python, Rust, Scala, Scheme and Zig**
+- Posibility to add custom language implementations
 - This plugin has been developed on and for Linux following open source philosophies.
 
 ## Overview
@@ -17,6 +18,7 @@
 | Console size configurable | :heavy_check_mark: | By `setup` |
 | Autosave configurable | :heavy_check_mark: | By `setup` |
 | Supports different languages in same window (different buffers)  | :heavy_check_mark: |  |
+| Supports custom language implementations | :heavy_check_mark: |  |
 | Main arguments | :x: | |
 | Stdin | :heavy_check_mark: | |
 | Popup console | :heavy_check_mark: | By `setup` |
@@ -39,15 +41,16 @@ use {
     ft = { "asm", "c", "cpp", "clojure", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "scheme", "zig" },
     opts = {
          -- Not necessary. Only if you want to change the setup
+         view = {
+             -- Default console size (this applies to popup size too)
+             console_size = 10,
 
-         -- Default console size (this applies to popup size too)
-         console_size = 10,
+             -- Default autosave before pressing the Fuel shortcut
+             autosave = true,
 
-         -- Default autosave before pressing the Fuel shortcut
-         autosave = true,
-
-         -- Default false. If you want to show the console in a popup instead of a buffer
-         popup = false
+             -- Default false. If you want to show the console in a popup instead of a buffer
+             popup = false
+         }
     },
     keys = {
         { "<leader>fu", "<Plug>Fuel" },
@@ -69,20 +72,49 @@ vim.api.nvim_set_keymap('n', '<leader>fs', '<Plug>FuelStop<CR>', opts)
 - Only the installation step is required to use this plugin, but you can modify this options if you like:
 ```lua
 require'fuel'.setup{
-    -- Default console size (this applies to popup size too)
-    console_size = 10,
+    view = {
+        -- Default console size (this applies to popup size too)
+        console_size = 10,
 
-    -- Default autosave before pressing the Fuel shortcut
-    autosave = true,
+        -- Default autosave before pressing the Fuel shortcut
+        autosave = true,
 
-    -- Default false. If you want to show the console in a popup instead of a buffer
-    popup = false
+        -- Default false. If you want to show the console in a popup instead of a buffer
+        popup = false
+    },
+    -- Override language implementations or implement a missing language
+    language_implementations = {
+        -- C example
+        c = {
+            -- Required build function
+            -- file_with_extension is this case will be 'file_name.c'
+            -- file is this case will be 'file_name'
+            build = function (file_with_extension, file)
+                vim.cmd("autocmd BufDelete c_fuel_main_console silent !rm -f " .. file)
+                return string.format("gcc -Wall %s -o /tmp/%s && /tmp/%s && rm -f /tmp/%s 2> /dev/null", file_with_extension, file, file, file)
+            end,
+
+            -- Required statusline function
+            -- This will print on cmd statusline after build is executed
+            get_statusline = function(file)
+                return util.statusline_style(" C", file)
+            end,
+
+            -- Required get_footer function
+            -- This will print on footer popup after build is executed
+            get_footer = function(file)
+                return util.footer(" C", file)
+            end
+        }
+
+    }
 }
 ```
 
 # Usage
 - Executing the map corresponding to `Fuel` in a main or scripting file, it will compile and execute the aforementioned file opening a console ouput.
 - Execute the map corresponding to `FuelStop` to close all open Fuel console. In case you are using `popup = true` just press <ESC>
+- To see the execution string use the command `:FuelInfo` which will open a popup with info
 
 ## Screenshots
 ### Java:

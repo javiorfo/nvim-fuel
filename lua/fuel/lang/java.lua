@@ -2,11 +2,8 @@ local util = require'fuel.util'
 
 return {
     build = function (file_with_extension, file)
-        local classpath = vim.fn.expand("%:h")
-        local dot_classes = classpath .. "/*.class"
-
-        vim.cmd("autocmd BufDelete java_fuel_main_console silent !rm -f " .. dot_classes)
-        return string.format(" javac %s -Xlint:all -Xdiags:verbose && java -cp %s %s && rm -f %s 2> /dev/null", file_with_extension, classpath, file, dot_classes)
+        vim.cmd("autocmd BufDelete java_fuel_main_console silent !rm -f /tmp/*.class")
+        return string.format("javac -d /tmp %s -Xlint:all -Xdiags:verbose && java -cp /tmp %s && rm -f /tmp/*.class 2> /dev/null", file_with_extension, file, file)
     end,
     get_statusline = function(file)
         return util.statusline_style(" Java", file)
@@ -14,6 +11,5 @@ return {
     get_footer = function(file)
         return util.footer(" Java", file)
     end
-
 }
 
