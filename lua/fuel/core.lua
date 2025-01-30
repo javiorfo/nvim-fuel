@@ -53,6 +53,12 @@ local function open_console_popup(language)
         footer = { lang_impl.get_footer(file), "String" },
         content = function()
             vim.cmd("start | term " .. lang_impl.build(file_with_extension, file))
+        end,
+        on_close = function()
+            local nvim_tree = vim.fn.bufnr("NvimTree_1")
+            if vim.fn.bufexists(nvim_tree) and vim.api.nvim_buf_is_valid(nvim_tree) then
+                vim.api.nvim_input("<CR>")
+            end
         end
     }
     popcorn:new(popup_opts):pop()
@@ -115,7 +121,7 @@ function M.info()
         title = { "󰈸 FUEL INFO", "Boolean" },
         footer = { string.format("Language %s", string.upper(ft)), "String" },
         content = {
-            { "Implementation:", "Type" },
+            { "Implementation:",     "Type" },
             { msg },
             { "" },
             { "Command to execute:", "Type" },
